@@ -23,12 +23,13 @@
 
 ## 1. REPOSITORY REVENUE ARCHITECTURE & AUDITED BASELINES
 
-- **Repository**: `https://github.com/kbsingh1399/Engine_1_arena_PR`
-- **Audited Commit Baseline**: `8c0d74b` (on `origin/main`)
+- **Repository**: `https://github.com/kbsingh1399/Engine_2`
 - **Primary Source Code Target**: 
-  `https://raw.githubusercontent.com/kbsingh1399/Engine_1_arena_PR/main/Engine_2/s1_liquidation_cascade.py`
-- **Master Institutional Forensic Audit**: 
-  `https://raw.githubusercontent.com/kbsingh1399/Engine_1_arena_PR/main/ENGINE2_AUDIT_MASTER.md`
+  `https://raw.githubusercontent.com/kbsingh1399/Engine_2/main/s1_liquidation_cascade.py`
+- **Standalone 4-Agent Adversarial Stress Test Council**:
+  `https://raw.githubusercontent.com/kbsingh1399/Engine_2/main/adversarial_council_stress_test.py`
+- **Token-Optimized Session Context Map**:
+  `https://raw.githubusercontent.com/kbsingh1399/Engine_2/main/.agents/memory/SESSION_CONTEXT_MAP.md`
 - **Universe**: 18 Institutional Binance USDT-Margined Perpetual Contracts:
   `BTCUSDT`, `ETHUSDT`, `SOLUSDT`, `BNBUSDT`, `XRPUSDT`, `DOGEUSDT`, `ADAUSDT`, `AVAXUSDT`, `LINKUSDT`, `SUIUSDT`, `NEARUSDT`, `APTUSDT`, `PEPEUSDT`, `WIFUSDT`, `TIAUSDT`, `ARBUSDT`, `OPUSDT`, `INJUSDT`.
   Data directory: `Engine_2/binance_backtesting_data/` (3,464,074 15-minute bars, 0 nulls, strictly monotonic timestamps).
