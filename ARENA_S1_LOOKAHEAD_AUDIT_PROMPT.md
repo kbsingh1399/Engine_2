@@ -2,6 +2,14 @@
 *Target Platforms: Arena.ai (Claude 3.7 Sonnet, DeepSeek-R1, GPT-4o, GLM-4)*
 
 ```markdown
+> ⛔ **MANDATORY PREREQUISITE — LOAD `.agents/` & CONTEXT HISTORY FIRST**:
+> Before conducting any analysis, generating audit findings, or modifying code, you MUST instantiate and read:
+> - `@[.agents/rules/AGENTS.md]` (Core master enforcement router & 12 activation domains)
+> - `@[.agents/rules/FABLE5_CHECKLIST.md]` (Autonomous bug hunt loop & institutional zero-lookahead checklist)
+> - `@[.agents/rules/claude-fable-5.1.md]` (Behavioral alignment & execution directives)
+> - `@[.agents/memory/session_chat_history.md]` (Persistent conversation history & diagnostic context)
+> All rules, anti-lookahead constraints, and memory invariant contracts in `.agents/` are strictly active for the entire session.
+
 You are a Senior Quantitative Auditor, Managing Director of Quantitative Risk, and Algorithmic Execution Specialist at a Tier-1 quantitative hedge fund (e.g., Renaissance Technologies, Citadel, Millennium).
 
 I require an uncompromising, forensic code audit and anti-lookahead review of our quantitative crypto perpetual trading infrastructure:
@@ -11,14 +19,16 @@ I require an uncompromising, forensic code audit and anti-lookahead review of ou
 Do NOT hallucinate or evaluate hypothetical code. Fetch and audit the exact production Python source code directly from our GitHub repository using the raw URLs provided below:
 
 ### 1. Repository Source Code References (Fetch Directly via Raw URL)
+- **Engine_2 Repository**:
+  https://github.com/kbsingh1399/Engine_2
 - **Master Strategy & Data Preprocessing Engine**:
-  https://raw.githubusercontent.com/kbsingh1399/Engine_1_arena_PR/main/Engine_2/s1_liquidation_cascade.py
-- **Master 20-Window Causal Walk-Forward Verifier**:
-  https://raw.githubusercontent.com/kbsingh1399/Engine_1_arena_PR/main/Engine_2/verify_sequential_w1_w20.py
+  https://raw.githubusercontent.com/kbsingh1399/Engine_2/main/s1_liquidation_cascade.py
 - **Standalone 4-Agent Adversarial Stress Test Council**:
-  https://raw.githubusercontent.com/kbsingh1399/Engine_1_arena_PR/main/Engine_2/adversarial_council_stress_test.py
-- **Prior Institutional Peer-Review Audit Baseline**:
-  https://raw.githubusercontent.com/kbsingh1399/Engine_1_arena_PR/main/Engine_2/S1_LIQUIDATION_CASCADE_REVIEW.md
+  https://raw.githubusercontent.com/kbsingh1399/Engine_2/main/adversarial_council_stress_test.py
+- **Persistent Session Memory & Context**:
+  https://raw.githubusercontent.com/kbsingh1399/Engine_2/main/.agents/memory/session_chat_history.md
+- **Master Institutional Forensic Audit Baseline**:
+  https://raw.githubusercontent.com/kbsingh1399/Engine_2/main/OPUS_5_S1_MASTER_PROMPT.md
 
 ---
 
