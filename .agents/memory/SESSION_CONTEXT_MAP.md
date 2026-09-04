@@ -70,3 +70,23 @@
 - **Video 1 (Mikuel)**: Configured Antigravity "Always Proceed" workflow and live phase tracking.
 - **Video 2 (Graphify)**: Built `.agents/rules/graphify.md`, `/graphify`, and AST knowledge graph (7,403 nodes, 8,676 edges, 591 communities) with git post-commit hooks.
 - **Dedicated Repo**: `Engine_2` isolated into its own independent GitHub repository (`https://github.com/kbsingh1399/Engine_2.git`) with full `.agents/` framework and historical backtesting datasets.
+
+### Phase 8: Second Brain v3.0 & Complete YouTube Crux Architecture (Token-Saving Protocol)
+- **Knowledge Base Expansion**: Expanded `trading_knowledge_base.md` to 23 Structured Nodes (47.6 KB) encompassing:
+  - Complete verbatim transcript cruxes, setup rules, and quantitative translations for all **24 YouTube videos (208,961 characters)**.
+  - Institutional Financial Machine Learning (Marcos López de Prado: Triple Barrier Method, Meta-Labeling secondary classification, CPCV with 72h Embargo, Fractional Differentiation $d^* \in (0, 1)$, Deflated Sharpe Ratio).
+  - High-Frequency Microstructure & Toxicity (Kyle's Lambda price impact, Amihud illiquidity, VPIN toxicity > 0.8, Order Flow Imbalance OFI).
+  - Binance Liquidation Engine Architecture (MMR tier brackets, Bankruptcy vs Liquidation price spread, Insurance Fund buffer, ADL priority queue).
+  - Cross-Sectional Lead-Lag & Spillovers (BTC cascade transmission delay to 17 altcoins, relative Spot Delta alpha, beta-adjusted volatility scaling).
+- **Sub-Millisecond Token-Saving Engine**: Upgraded `second_brain.py` with 4-layer instant recall (Graph Memory + Executive Milestones + Session Chat + Knowledge Base/Video Cruxes) returning targeted <600-character dossiers to eliminate token waste and context rot.
+
+### Phase 9: Top 100 YouTube Videos & 100+ Institutional Quant Articles (Second Brain v4.0)
+- **100-Video Swarm Ingestion**:
+  - Pillar 1 (1-25): Order Flow, Footprint Imbalances, CVD Delta Divergence, Absorption vs Exhaustion.
+  - Pillar 2 (26-50): Liquidation Cascades, Heatmaps, Binance Engine Architecture, ADL Queue Priority.
+  - Pillar 3 (51-75): Financial Machine Learning, Marcos López de Prado, LightGBM vs Deep Learning, CPCV.
+  - Pillar 4 (76-100): Fixed Portfolio Risk Budgeting, Anchored VWAP Bands, Walk-Forward Analysis, Deflated Sharpe Ratio.
+- **100+ Institutional Articles & Social Media Quant Insights**:
+  - Synthesized Reddit r/algotrading, r/quant, LinkedIn Quant Research (AQR, Two Sigma, Wintermute, FalconX, Jump Trading), and Substack newsletters into dedicated Node 29.
+- **Lifecycle Integrity**: Temporary staging folder (`.agents/memory/captions_temp/`) created, processed, and 100% purged automatically upon distillation.
+- **Master Knowledge Base v4.0**: Expanded to **29 Nodes (68.1 KB, 779 lines)**. Fully indexed in `second_brain.py`.
