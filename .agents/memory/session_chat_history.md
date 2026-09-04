@@ -39229,3 +39229,17 @@ ules/agent.md from both Engine_1_arena_PR/.agents and Engine_2/.agents, eliminat
      - Achieved 100% byte-for-byte parity across both `Engine_1_arena_PR/.agents` and `Engine_2/.agents` (7,990 files each, 0 mismatches).
   6. **Git Mirror & Push**:
      - Committed all updates (`07ffcc9`) and successfully pushed to `https://github.com/kbsingh1399/Engine_1_arena_PR.git` on branch `main`.
+
+
+---
+
+## Turn Record: Scite.ai Integration, Credential Ingestion & Microstructure Literature Consensus (2026-09-05)
+- **User Action**: Provided Scite API key (scite_HcQiTAuZm4LwsfYoRvoG069bIMSPomwg8_zEUtTDzVE), Scite literature review output, and BibTeX citations (Crypto_perpetual_futures_microstructure_cascades_and_OFI%2FCVD_dislocations.bib).
+- **Actions Executed**:
+  1. Stored Scite API key safely in .env across Engine_1_arena_PR and Engine_2 with verified .gitignore protection against git leaks.
+  2. Built programmatic Scite research client .agents/scripts/scite_client.py and synced to Engine_2/.agents/scripts/scite_client.py (verified live with HTTP 200 responses).
+  3. Ingested 
+eferences.bib into architecture memory in both repositories.
+  4. Expanded Node 30 in 	rading_knowledge_base.md with 7 canonical peer-reviewed papers (Albers et al. SSRN 3908966, Giagkiozis & Sa'id Ledger 2024, Farzulla 2026, Shynkevich JFM 2026, Meister & Price 2022, Ackerer et al. Math Finance 2025, Lim 2026).
+  5. Created deterministic OKF contracts: .okf/indicators/ofi_microstructure.md and .okf/indicators/liquidation_oi_decoupling.md, registering them in .okf/OKF_INDEX.md and syncing to Engine_2/.okf.
+- **Next Operational Milestone**: Execute Strategy 1 (S1) Institutional Verification across the 20 OOS Windows (2021-2026) under single causal parameter configuration matching empirical friction criteria.
