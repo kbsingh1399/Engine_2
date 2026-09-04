@@ -52,8 +52,9 @@ Run: run_postprocess_tool
 
 **Step 2: Read Conversation Memory & Session Chat**
 ```
+Read: .agents/memory/SESSION_CONTEXT_MAP.md (Token-optimized 7-phase milestone registry)
 Read: .agents/memory/MEMORY.md
-Read: .agents/memory/session_chat_history.md
+Read: .agents/memory/session_chat_history.md (Targeted lookups via graphify / regex)
 Search: conversation transcript
 ```
 🔴 **STRICT MANDATE FOR EVERY TURN:** You MUST append your final output and the user's prompt to `.agents/memory/session_chat_history.md` at the END of every single response without fail. Failure to append chat history causes irreversible context amnesia. Also review `.agents/rules/Gemini.md`
