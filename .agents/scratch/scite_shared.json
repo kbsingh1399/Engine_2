@@ -1,0 +1,790 @@
+{
+  "token": "5c57cac17ef7474d9d39f49397c1c7de",
+  "title": "Crypto perpetual futures microstructure cascades and OFI/CVD dislocations",
+  "chatSession": [
+    {
+      "role": "user",
+      "content": "Act as an institutional quantitative researcher specializing in cryptocurrency market microstructure and high-frequency trading.\n\nConduct an exhaustive literature review across peer-reviewed finance journals and preprints (e.g., Journal of Finance, JFE, Mathematical Finance, Quantitative Finance, SSRN) regarding:\n\"Liquidation cascades, Order Flow Imbalance (OFI), Cumulative Volume Delta (CVD) divergence, and Anchored VWAP dislocations in cryptocurrency perpetual futures (Binance, Bybit, BitMEX, Deribit).\"\n\nStructure your response strictly into the following 5 institutional sections:\n\n1. LIQUIDATION CASCADES & LIQUIDITY VACUUMS:\n   - What empirical evidence quantifies the collapse in top-of-book market maker depth when exchange automated liquidation engines trigger forced market orders?\n   - What is the empirical duration (in seconds, minutes, or bars) of the post-cascade liquidity vacuum before passive institutional absorption stabilizes price?\n   - What statistical thresholds (e.g., rolling Z-score > 1.8) isolate genuine forced liquidation spikes from normal retail stop-loss clusters?\n\n2. ORDER FLOW IMBALANCE & CVD ABSORPTION:\n   - Provide the explicit mathematical formulations for Order Flow Imbalance (OFI), Volume-Synchronized Probability of Toxicity (VPIN), and Kyle's Lambda as applied to crypto perpetuals.\n   - What empirical evidence proves that Spot CVD divergence (aggressive spot buying while perpetual futures panic sell) reliably predicts mean-reversion reversal rather than trend continuation?\n   - How should CVD be normalized across 24/7 non-resetting cryptocurrency markets (e.g., rolling Z-scores vs. fractional differentiation)?\n\n3. INTRADAY VWAP & STATISTICAL DISLOCATION:\n   - What is the empirical probability distribution and mean-reversion half-life when price dislocates beyond 2 standard deviations (-2.0 sigma) from rolling intraday VWAP?\n   - Under what macroeconomic or volatility regimes does VWAP mean-reversion fail (the \"riding the band\" trap)?\n\n4. SMART CITATIONS CONSENSUS (SUPPORTING VS. CONTRASTING):\n   - Which specific papers SUPPORT these market microstructure anomalies as profitable trading strategies?\n   - Which papers CONTRAST, fail to replicate, or show that the edge decays after accounting for exchange taker fees (>= 5\u20138 bps) and execution slippage (10\u201315 bps)?\n\n5. CONCRETE PARAMETER SPECIFICATION TABLE:\n   Provide a concise summary table with:\n   - Indicator / Mechanism\n   - Mathematical Formula\n   - Optimal Timeframe / Lookback Window\n   - Entry Trigger Threshold\n   - Validated Exit / Trailing Ratchet Geometry (e.g., +0.8R Breakeven, +1.5R Profit Lock, +2.5R Target)\n   - Primary Supporting Papers (with Author & Year)",
+      "references": []
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "structuredResponse": [
+        {
+          "response": "The provided reference is entirely unrelated to the task. It concerns hospital volume and survival in head and neck cancer patients, and contains no information whatsoever about cryptocurrency market microstructure, liquidation cascades, order flow imbalance, CVD, VWAP, or any related topic.\n\nI cannot complete this literature review as requested because no relevant references have been provided to support a response on this subject matter.",
+          "reference": {
+            "doi": "10.1002/cncr.27976",
+            "date": "2013-03-01",
+            "page": "1845-1852",
+            "pmid": [
+              23456789
+            ],
+            "year": 2013,
+            "is_oa": true,
+            "issns": [
+              "0008-543X",
+              "1097-0142"
+            ],
+            "issue": "10",
+            "tally": {
+              "total": 56,
+              "mentioning": 52,
+              "supporting": 3,
+              "unclassified": 0,
+              "contradicting": 1,
+              "citingPublications": 58
+            },
+            "title": "Hospital volume is associated with survival but not multimodality therapy in Medicare patients with advanced head and neck cancer",
+            "topics": [
+              {
+                "level": 2,
+                "display_name": "Cancer",
+                "mapping_score": 0.5328339338302612
+              },
+              {
+                "level": 0,
+                "display_name": "Medicine",
+                "mapping_score": 0.9735925793647766
+              },
+              {
+                "level": 3,
+                "display_name": "Head and neck cancer",
+                "mapping_score": 0.583662748336792
+              },
+              {
+                "level": 1,
+                "display_name": "Radiology",
+                "mapping_score": null
+              },
+              {
+                "level": 1,
+                "display_name": "Internal medicine",
+                "mapping_score": 0.6790000200271606
+              },
+              {
+                "level": 1,
+                "display_name": "Genetics",
+                "mapping_score": 0.5743886828422546
+              },
+              {
+                "level": 0,
+                "display_name": "Biology",
+                "mapping_score": 0.6499000191688538
+              },
+              {
+                "level": 2,
+                "display_name": "Radiation therapy",
+                "mapping_score": null
+              },
+              {
+                "level": 1,
+                "display_name": "Surgery",
+                "mapping_score": null
+              },
+              {
+                "level": 0,
+                "display_name": "Medicine",
+                "mapping_score": 0.9735925793647766
+              },
+              {
+                "level": 2,
+                "display_name": "Head and neck",
+                "mapping_score": 0.6190154552459717
+              },
+              {
+                "level": 0,
+                "display_name": "Medicine",
+                "mapping_score": 0.9735925793647766
+              },
+              {
+                "level": 1,
+                "display_name": "Surgery",
+                "mapping_score": null
+              }
+            ],
+            "volume": "119",
+            "authors": [
+              {
+                "author_name": "Arun Sharma",
+                "author_slug": "arun-sharma-A3eG8j",
+                "affiliations": [
+                  "University of Washington"
+                ],
+                "author_orcid": "0000-0001-8038-7783",
+                "affiliation_slugs": [
+                  "university-of-washington-5JeG"
+                ],
+                "author_sequence_number": 1
+              },
+              {
+                "author_name": "Stephen M. Schwartz",
+                "author_slug": "stephen-m-schwartz-PwrYem",
+                "affiliations": [
+                  "University of Washington",
+                  "Fred Hutch Cancer Center"
+                ],
+                "author_orcid": "0000-0001-7499-8502",
+                "affiliation_slugs": [
+                  "university-of-washington-5JeG",
+                  "fred-hutch-cancer-center-ayK21"
+                ],
+                "author_sequence_number": 2
+              },
+              {
+                "author_name": "Eduardo M\u00e9ndez",
+                "author_slug": "eduardo-mendez-keL1jw",
+                "affiliations": [
+                  "University of Washington",
+                  "Fred Hutch Cancer Center",
+                  "VA Puget Sound Health Care System"
+                ],
+                "affiliation_slugs": [
+                  "university-of-washington-5JeG",
+                  "fred-hutch-cancer-center-ayK21",
+                  "va-puget-sound-health-care-4YEmE"
+                ],
+                "author_sequence_number": 3
+              }
+            ],
+            "journal": "cancer",
+            "abstract": "BACKGROUND\nGiven the complexity of management of advanced head and neck squamous cell carcinoma (HNSCC), this study hypothesized that high hospital volume would be associated with receiving National Comprehensive Cancer Network (NCCN) guideline therapy and improved survival in patients with advanced HNSCC.\n\n\nMETHODS\nThe Surveillance, Epidemiology, and End Results (SEER)-Medicare database was used to identify patients with advanced HNSCC. Treatment modalities and survival were determined using Medicare data. Hospital volume was determined by the number of patients with HNSCC treated at each hospital.\n\n\nRESULTS\nThere were 1195 patients with advanced HNSCC who met inclusion criteria. In multivariable analyses, high hospital volume was not associated with receiving multimodality therapy per NCCN guidelines (odds ratio = 1.02, 95% confidence interval = 0.66\u20131.60), but showed a nearly significant inverse association with survival in a model adjusted for National Cancer Institute\u2013designated cancer center status, age, sex, race, socioeconomic status, marital status, comorbidity, year of diagnosis, tumor site, and tumor stage (hazard ratio = 0.85, 95% confidence interval = 0.69\u20131.04).\n\n\nCONCLUSIONS\nMedicare patients with advanced HNSCC treated at high-volume hospitals were not more likely to receive NCCN guideline therapy, but had nearly statistically significant better survival, when compared with patients treated at low-volume hospitals. These results suggest that features of high-volume hospitals other than delivery of NCCN guideline therapy influence survival.",
+            "memberId": 311,
+            "citations": [
+              {
+                "id": 1928369834,
+                "lang": "en",
+                "type": "mentioning",
+                "section": "discussion",
+                "snippet": "Survival among patients with HNSCC is influenced by patient and tumor characteristics, such as performance status, comorbidity, tumor size, and presence of regional lymph node metastasis <cite data-doi=\"10.1007/s00520-012-1386-y\">25</cite>, <cite data-doi=\"10.1001/jama.291.20.2441\">26</cite>. The objective of this study was to examine the role of hospital characteristics in survival.",
+                "merge_date": "2020-08-05T22:20:53",
+                "source_doi": "10.1002/cncr.27976",
+                "target_doi": "10.1001/jama.291.20.2441",
+                "type_confidence": 100
+              },
+              {
+                "id": 1928369828,
+                "lang": "en",
+                "type": "mentioning",
+                "section": "methods",
+                "snippet": "In addition, education and income data for each patient's census tract and ZIP code from the 2000 census are incorporated into the PEDSF as indicators of socioeconomic status (SES) <cite data-doi=\"10.1097/00005650-200208001-00003\">18</cite>. Medicare inpatient and physician claims were used to construct a Charlson\u2010based comorbidity score by reviewing claims 12 calendar months prior to the SEER diagnosis date, as described <cite data-doi=\"10.1016/0021-9681(87)90171-8 10.1016/0895-4356(92)90133-8 10.1016/s0895-4356(00)00256-0\">19\u201021</cite>",
+                "merge_date": "2020-08-05T22:20:53",
+                "source_doi": "10.1002/cncr.27976",
+                "target_doi": "10.1016/0021-9681(87)90171-8",
+                "type_confidence": 100
+              },
+              {
+                "id": 1928369822,
+                "lang": "en",
+                "type": "mentioning",
+                "section": "introduction",
+                "snippet": "Prior studies in diseases other than HNSCC have shown that hospital volume<cite data-doi=\"10.1001/jama.280.20.1747\">12</cite> and physician volume<cite data-doi=\"10.1016/j.urology.2008.03.016\">13</cite> influence outcomes. Treatment at a high\u2010volume facility is associated with improved long\u2010term survival in patients with early\u2010 or late\u2010stage laryngeal cancer <cite data-doi=\"10.1002/cncr.25364\">14</cite>, <cite data-doi=\"10.1002/hed.21072\">15</cite>.",
+                "merge_date": "2020-08-05T22:20:53",
+                "source_doi": "10.1002/cncr.27976",
+                "target_doi": "10.1001/jama.280.20.1747",
+                "type_confidence": 100
+              }
+            ],
+            "oa_status": "hybrid",
+            "publisher": "Wiley",
+            "titleSlug": "hospital-volume-is-associated-with-ldEPOr",
+            "index_time": "2026-07-21T03:21:13.013358",
+            "mesh_types": [
+              {
+                "qualifier_id": "Q000401",
+                "descriptor_id": "D006258",
+                "is_major_topic": false,
+                "qualifier_name": "mortality",
+                "descriptor_name": "Head and Neck Neoplasms"
+              },
+              {
+                "qualifier_id": "Q000473",
+                "descriptor_id": "D006258",
+                "is_major_topic": false,
+                "qualifier_name": "pathology",
+                "descriptor_name": "Head and Neck Neoplasms"
+              },
+              {
+                "qualifier_id": "Q000628",
+                "descriptor_id": "D006258",
+                "is_major_topic": false,
+                "qualifier_name": "therapy",
+                "descriptor_name": "Head and Neck Neoplasms"
+              },
+              {
+                "qualifier_id": "Q000453",
+                "descriptor_id": "D014481",
+                "is_major_topic": false,
+                "qualifier_name": "epidemiology",
+                "descriptor_name": "United States"
+              },
+              {
+                "qualifier_id": "Q000592",
+                "descriptor_id": "D016522",
+                "is_major_topic": false,
+                "qualifier_name": "standards",
+                "descriptor_name": "Oncology Service, Hospital"
+              },
+              {
+                "qualifier_id": "Q000706",
+                "descriptor_id": "D016522",
+                "is_major_topic": false,
+                "qualifier_name": "statistics & numerical data",
+                "descriptor_name": "Oncology Service, Hospital"
+              },
+              {
+                "qualifier_id": "Q000706",
+                "descriptor_id": "D061846",
+                "is_major_topic": false,
+                "qualifier_name": "statistics & numerical data",
+                "descriptor_name": "Hospitals, Low-Volume"
+              },
+              {
+                "qualifier_id": "Q000592",
+                "descriptor_id": "D061847",
+                "is_major_topic": false,
+                "qualifier_name": "standards",
+                "descriptor_name": "Hospitals, High-Volume"
+              },
+              {
+                "qualifier_id": "Q000706",
+                "descriptor_id": "D061847",
+                "is_major_topic": false,
+                "qualifier_name": "statistics & numerical data",
+                "descriptor_name": "Hospitals, High-Volume"
+              },
+              {
+                "qualifier_id": "Q000401",
+                "descriptor_id": "D002294",
+                "is_major_topic": false,
+                "qualifier_name": "mortality",
+                "descriptor_name": "Carcinoma, Squamous Cell"
+              },
+              {
+                "qualifier_id": "Q000473",
+                "descriptor_id": "D002294",
+                "is_major_topic": false,
+                "qualifier_name": "pathology",
+                "descriptor_name": "Carcinoma, Squamous Cell"
+              },
+              {
+                "qualifier_id": "Q000628",
+                "descriptor_id": "D002294",
+                "is_major_topic": false,
+                "qualifier_name": "therapy",
+                "descriptor_name": "Carcinoma, Squamous Cell"
+              }
+            ],
+            "journalSlug": "cancer-A3lav",
+            "last_update": 1697509629,
+            "shortJournal": "Cancer",
+            "normalized_types": [
+              "article",
+              "research support, n.i.h., extramural"
+            ],
+            "editorial_notices": {},
+            "fulltext_excerpts": [],
+            "fulltext_location": "s3://scitewiley/fulltext/xml/ed93ca61-9524-4664-b0c9-12f58a595361_1590015377.6943634/27976_ftp.wml2.xml.json",
+            "pubchem_compounds": []
+          },
+          "reference_doi": "10.1002/cncr.27976",
+          "reference_number": 1
+        }
+      ],
+      "references": [
+        {
+          "answer": "BACKGROUND\nGiven the complexity of management of advanced head and neck squamous cell carcinoma (HNSCC), this study hypothesized that high hospital volume would be associated with receiving National Comprehensive Cancer Network (NCCN) guideline therapy and improved survival in patients with advanced HNSCC.\n\n\nMETHODS\nThe Surveillance, Epidemiology, and End Results (SEER)-Medicare database was used to identify patients with advanced HNSCC. Treatment modalities and survival were determined using Medicare data. Hospital volume was determined by the number of patients with HNSCC treated at each hospital.\n\n\nRESULTS\nThere were 1195 patients with advanced HNSCC who met inclusion criteria. In multivariable analyses, high hospital volume was not associated with receiving multimodality therapy per NCCN guidelines (odds ratio = 1.02, 95% confidence interval = 0.66\u20131.60), but showed a nearly significant inverse association with survival in a model adjusted for National Cancer Institute\u2013designated cancer center status, age, sex, race, socioeconomic status, marital status, comorbidity, year of diagnosis, tumor site, and tumor stage (hazard ratio = 0.85, 95% confidence interval = 0.69\u20131.04).\n\n\nCONCLUSIONS\nMedicare patients with advanced HNSCC treated at high-volume hospitals were not more likely to receive NCCN guideline therapy, but had nearly statistically significant better survival, when compared with patients treated at low-volume hospitals. These results suggest that features of high-volume hospitals other than delivery of NCCN guideline therapy influence survival.",
+          "texts": [
+            "BACKGROUND\nGiven the complexity of management of advanced head and neck squamous cell carcinoma (HNSCC), this study hypothesized that high hospital volume would be associated with receiving National Comprehensive Cancer Network (NCCN) guideline therapy and improved survival in patients with advanced HNSCC.\n\n\nMETHODS\nThe Surveillance, Epidemiology, and End Results (SEER)-Medicare database was used to identify patients with advanced HNSCC. Treatment modalities and survival were determined using Medicare data. Hospital volume was determined by the number of patients with HNSCC treated at each hospital.\n\n\nRESULTS\nThere were 1195 patients with advanced HNSCC who met inclusion criteria. In multivariable analyses, high hospital volume was not associated with receiving multimodality therapy per NCCN guidelines (odds ratio = 1.02, 95% confidence interval = 0.66\u20131.60), but showed a nearly significant inverse association with survival in a model adjusted for National Cancer Institute\u2013designated cancer center status, age, sex, race, socioeconomic status, marital status, comorbidity, year of diagnosis, tumor site, and tumor stage (hazard ratio = 0.85, 95% confidence interval = 0.69\u20131.04).\n\n\nCONCLUSIONS\nMedicare patients with advanced HNSCC treated at high-volume hospitals were not more likely to receive NCCN guideline therapy, but had nearly statistically significant better survival, when compared with patients treated at low-volume hospitals. These results suggest that features of high-volume hospitals other than delivery of NCCN guideline therapy influence survival.",
+            "Survival among patients with HNSCC is influenced by patient and tumor characteristics, such as performance status, comorbidity, tumor size, and presence of regional lymph node metastasis <cite data-doi=\"10.1007/s00520-012-1386-y\">25</cite>, <cite data-doi=\"10.1001/jama.291.20.2441\">26</cite>. The objective of this study was to examine the role of hospital characteristics in survival.",
+            "In addition, education and income data for each patient's census tract and ZIP code from the 2000 census are incorporated into the PEDSF as indicators of socioeconomic status (SES) <cite data-doi=\"10.1097/00005650-200208001-00003\">18</cite>. Medicare inpatient and physician claims were used to construct a Charlson\u2010based comorbidity score by reviewing claims 12 calendar months prior to the SEER diagnosis date, as described <cite data-doi=\"10.1016/0021-9681(87)90171-8 10.1016/0895-4356(92)90133-8 10.1016/s0895-4356(00)00256-0\">19\u201021</cite>",
+            "Prior studies in diseases other than HNSCC have shown that hospital volume<cite data-doi=\"10.1001/jama.280.20.1747\">12</cite> and physician volume<cite data-doi=\"10.1016/j.urology.2008.03.016\">13</cite> influence outcomes. Treatment at a high\u2010volume facility is associated with improved long\u2010term survival in patients with early\u2010 or late\u2010stage laryngeal cancer <cite data-doi=\"10.1002/cncr.25364\">14</cite>, <cite data-doi=\"10.1002/hed.21072\">15</cite>."
+          ],
+          "textSources": [
+            "abstract",
+            "smart_citation",
+            "smart_citation",
+            "smart_citation"
+          ],
+          "context": "BACKGROUND\nGiven the complexity of management of advanced head and neck squamous cell carcinoma (HNSCC), this study hypothesized that high hospital volume would be associated with receiving National Comprehensive Cancer Network (NCCN) guideline therapy and improved survival in patients with advanced HNSCC.\n\n\nMETHODS\nThe Surveillance, Epidemiology, and End Results (SEER)-Medicare database was used to identify patients with advanced HNSCC. Treatment modalities and survival were determined using Medicare data. Hospital volume was determined by the number of patients with HNSCC treated at each hospital.\n\n\nRESULTS\nThere were 1195 patients with advanced HNSCC who met inclusion criteria. In multivariable analyses, high hospital volume was not associated with receiving multimodality therapy per NCCN guidelines (odds ratio = 1.02, 95% confidence interval = 0.66\u20131.60), but showed a nearly significant inverse association with survival in a model adjusted for National Cancer Institute\u2013designated cancer center status, age, sex, race, socioeconomic status, marital status, comorbidity, year of diagnosis, tumor site, and tumor stage (hazard ratio = 0.85, 95% confidence interval = 0.69\u20131.04).\n\n\nCONCLUSIONS\nMedicare patients with advanced HNSCC treated at high-volume hospitals were not more likely to receive NCCN guideline therapy, but had nearly statistically significant better survival, when compared with patients treated at low-volume hospitals. These results suggest that features of high-volume hospitals other than delivery of NCCN guideline therapy influence survival.",
+          "title": "Hospital volume is associated with survival but not multimodality therapy in Medicare patients with advanced head and neck cancer",
+          "doi": "10.1002/cncr.27976",
+          "link": "https://scite.ai/reports/10.1002/cncr.27976",
+          "type": "academic_paper",
+          "paper": {
+            "doi": "10.1002/cncr.27976",
+            "title": "Hospital volume is associated with survival but not multimodality therapy in Medicare patients with advanced head and neck cancer",
+            "slug": "hospital-volume-is-associated-with-ldEPOr",
+            "authors": [
+              {
+                "authorName": "Arun Sharma",
+                "authorSlug": "arun-sharma-A3eG8j",
+                "authorSequenceNumber": 1
+              },
+              {
+                "authorName": "Stephen M. Schwartz",
+                "authorSlug": "stephen-m-schwartz-PwrYem",
+                "authorSequenceNumber": 2
+              },
+              {
+                "authorName": "Eduardo M\u00e9ndez",
+                "authorSlug": "eduardo-mendez-keL1jw",
+                "authorSequenceNumber": 3
+              }
+            ],
+            "journal": "Cancer",
+            "shortJournal": "Cancer",
+            "publisher": "Wiley",
+            "memberId": 311,
+            "abstract": "BACKGROUND\nGiven the complexity of management of advanced head and neck squamous cell carcinoma (HNSCC), this study hypothesized that high hospital volume would be associated with receiving National Comprehensive Cancer Network (NCCN) guideline therapy and improved survival in patients with advanced HNSCC.\n\n\nMETHODS\nThe Surveillance, Epidemiology, and End Results (SEER)-Medicare database was used to identify patients with advanced HNSCC. Treatment modalities and survival were determined using Medicare data. Hospital volume was determined by the number of patients with HNSCC treated at each hospital.\n\n\nRESULTS\nThere were 1195 patients with advanced HNSCC who met inclusion criteria. In multivariable analyses, high hospital volume was not associated with receiving multimodality therapy per NCCN guidelines (odds ratio = 1.02, 95% confidence interval = 0.66\u20131.60), but showed a nearly significant inverse association with survival in a model adjusted for National Cancer Institute\u2013designated cancer center status, age, sex, race, socioeconomic status, marital status, comorbidity, year of diagnosis, tumor site, and tumor stage (hazard ratio = 0.85, 95% confidence interval = 0.69\u20131.04).\n\n\nCONCLUSIONS\nMedicare patients with advanced HNSCC treated at high-volume hospitals were not more likely to receive NCCN guideline therapy, but had nearly statistically significant better survival, when compared with patients treated at low-volume hospitals. These results suggest that features of high-volume hospitals other than delivery of NCCN guideline therapy influence survival.",
+            "year": 2013,
+            "date": "2013-03-01",
+            "lastUpdate": 1697509629,
+            "volume": "119",
+            "issue": "10",
+            "page": "1845-1852",
+            "tally": {
+              "total": 56,
+              "supporting": 3,
+              "contradicting": 1,
+              "mentioning": 52,
+              "unclassified": 0,
+              "citingPublications": 58
+            },
+            "issns": [
+              "0008-543X",
+              "1097-0142"
+            ],
+            "editorialNotices": [],
+            "normalizedTypes": [
+              "article",
+              "research support, n.i.h., extramural"
+            ],
+            "isOa": true,
+            "oaStatus": "hybrid",
+            "meshTypes": [
+              {
+                "descriptorId": "D006258",
+                "descriptorName": "Head and Neck Neoplasms",
+                "qualifierId": "Q000401",
+                "qualifierName": "mortality"
+              },
+              {
+                "descriptorId": "D006258",
+                "descriptorName": "Head and Neck Neoplasms",
+                "qualifierId": "Q000473",
+                "qualifierName": "pathology"
+              },
+              {
+                "descriptorId": "D006258",
+                "descriptorName": "Head and Neck Neoplasms",
+                "qualifierId": "Q000628",
+                "qualifierName": "therapy"
+              },
+              {
+                "descriptorId": "D014481",
+                "descriptorName": "United States",
+                "qualifierId": "Q000453",
+                "qualifierName": "epidemiology"
+              },
+              {
+                "descriptorId": "D016522",
+                "descriptorName": "Oncology Service, Hospital",
+                "qualifierId": "Q000592",
+                "qualifierName": "standards"
+              },
+              {
+                "descriptorId": "D016522",
+                "descriptorName": "Oncology Service, Hospital",
+                "qualifierId": "Q000706",
+                "qualifierName": "statistics & numerical data"
+              },
+              {
+                "descriptorId": "D061846",
+                "descriptorName": "Hospitals, Low-Volume",
+                "qualifierId": "Q000706",
+                "qualifierName": "statistics & numerical data"
+              },
+              {
+                "descriptorId": "D061847",
+                "descriptorName": "Hospitals, High-Volume",
+                "qualifierId": "Q000592",
+                "qualifierName": "standards"
+              },
+              {
+                "descriptorId": "D061847",
+                "descriptorName": "Hospitals, High-Volume",
+                "qualifierId": "Q000706",
+                "qualifierName": "statistics & numerical data"
+              },
+              {
+                "descriptorId": "D002294",
+                "descriptorName": "Carcinoma, Squamous Cell",
+                "qualifierId": "Q000401",
+                "qualifierName": "mortality"
+              },
+              {
+                "descriptorId": "D002294",
+                "descriptorName": "Carcinoma, Squamous Cell",
+                "qualifierId": "Q000473",
+                "qualifierName": "pathology"
+              },
+              {
+                "descriptorId": "D002294",
+                "descriptorName": "Carcinoma, Squamous Cell",
+                "qualifierId": "Q000628",
+                "qualifierName": "therapy"
+              }
+            ],
+            "citations": [
+              {
+                "id": 1928369834,
+                "source": "10.1002/cncr.27976",
+                "target": "10.1001/jama.291.20.2441",
+                "section": "discussion",
+                "type": "mentioning",
+                "typeConfidence": 100.0,
+                "snippet": "Survival among patients with HNSCC is influenced by patient and tumor characteristics, such as performance status, comorbidity, tumor size, and presence of regional lymph node metastasis <cite data-doi=\"10.1007/s00520-012-1386-y\">25</cite>, <cite data-doi=\"10.1001/jama.291.20.2441\">26</cite>. The objective of this study was to examine the role of hospital characteristics in survival.",
+                "lang": "en",
+                "selfCites": [],
+                "snippetHidden": false
+              },
+              {
+                "id": 1928369828,
+                "source": "10.1002/cncr.27976",
+                "target": "10.1016/0021-9681(87)90171-8",
+                "section": "methods",
+                "type": "mentioning",
+                "typeConfidence": 100.0,
+                "snippet": "In addition, education and income data for each patient's census tract and ZIP code from the 2000 census are incorporated into the PEDSF as indicators of socioeconomic status (SES) <cite data-doi=\"10.1097/00005650-200208001-00003\">18</cite>. Medicare inpatient and physician claims were used to construct a Charlson\u2010based comorbidity score by reviewing claims 12 calendar months prior to the SEER diagnosis date, as described <cite data-doi=\"10.1016/0021-9681(87)90171-8 10.1016/0895-4356(92)90133-8 10.1016/s0895-4356(00)00256-0\">19\u201021</cite>",
+                "lang": "en",
+                "selfCites": [],
+                "snippetHidden": false
+              },
+              {
+                "id": 1928369822,
+                "source": "10.1002/cncr.27976",
+                "target": "10.1001/jama.280.20.1747",
+                "section": "introduction",
+                "type": "mentioning",
+                "typeConfidence": 100.0,
+                "snippet": "Prior studies in diseases other than HNSCC have shown that hospital volume<cite data-doi=\"10.1001/jama.280.20.1747\">12</cite> and physician volume<cite data-doi=\"10.1016/j.urology.2008.03.016\">13</cite> influence outcomes. Treatment at a high\u2010volume facility is associated with improved long\u2010term survival in patients with early\u2010 or late\u2010stage laryngeal cancer <cite data-doi=\"10.1002/cncr.25364\">14</cite>, <cite data-doi=\"10.1002/hed.21072\">15</cite>.",
+                "lang": "en",
+                "selfCites": [],
+                "snippetHidden": false
+              }
+            ],
+            "fulltextExcerpts": [],
+            "highlightedFields": []
+          }
+        }
+      ],
+      "searchStrategy": [
+        "*"
+      ],
+      "model": "claude-opus-4-6",
+      "settings": {
+        "dois": [],
+        "topics": [],
+        "rank_by": "all",
+        "year_to": "",
+        "journals": [],
+        "year_from": "",
+        "dashboards": [],
+        "answer_length": "medium",
+        "abstracts_only": false,
+        "num_references": 27,
+        "full_texts_only": false,
+        "use_patent_mode": false,
+        "open_access_only": false,
+        "reasoning_effort": "minimal",
+        "reference_checks": [],
+        "citation_sections": [],
+        "publication_types": [],
+        "json_response_type": null,
+        "never_use_references": false,
+        "always_use_references": false,
+        "use_mixed_patent_mode": false,
+        "use_structured_response": true
+      },
+      "publicationsConsulted": [
+        {
+          "doi": "10.1002/cncr.27976",
+          "date": "2013-03-01",
+          "page": "1845-1852",
+          "pmid": [
+            23456789
+          ],
+          "year": 2013,
+          "is_oa": true,
+          "issns": [
+            "0008-543X",
+            "1097-0142"
+          ],
+          "issue": "10",
+          "tally": {
+            "total": 56,
+            "mentioning": 52,
+            "supporting": 3,
+            "unclassified": 0,
+            "contradicting": 1,
+            "citingPublications": 58
+          },
+          "title": "Hospital volume is associated with survival but not multimodality therapy in Medicare patients with advanced head and neck cancer",
+          "topics": [
+            {
+              "level": 2,
+              "display_name": "Cancer",
+              "mapping_score": 0.5328339338302612
+            },
+            {
+              "level": 0,
+              "display_name": "Medicine",
+              "mapping_score": 0.9735925793647766
+            },
+            {
+              "level": 3,
+              "display_name": "Head and neck cancer",
+              "mapping_score": 0.583662748336792
+            },
+            {
+              "level": 1,
+              "display_name": "Radiology",
+              "mapping_score": null
+            },
+            {
+              "level": 1,
+              "display_name": "Internal medicine",
+              "mapping_score": 0.6790000200271606
+            },
+            {
+              "level": 1,
+              "display_name": "Genetics",
+              "mapping_score": 0.5743886828422546
+            },
+            {
+              "level": 0,
+              "display_name": "Biology",
+              "mapping_score": 0.6499000191688538
+            },
+            {
+              "level": 2,
+              "display_name": "Radiation therapy",
+              "mapping_score": null
+            },
+            {
+              "level": 1,
+              "display_name": "Surgery",
+              "mapping_score": null
+            },
+            {
+              "level": 0,
+              "display_name": "Medicine",
+              "mapping_score": 0.9735925793647766
+            },
+            {
+              "level": 2,
+              "display_name": "Head and neck",
+              "mapping_score": 0.6190154552459717
+            },
+            {
+              "level": 0,
+              "display_name": "Medicine",
+              "mapping_score": 0.9735925793647766
+            },
+            {
+              "level": 1,
+              "display_name": "Surgery",
+              "mapping_score": null
+            }
+          ],
+          "volume": "119",
+          "authors": [
+            {
+              "author_name": "Arun Sharma",
+              "author_slug": "arun-sharma-A3eG8j",
+              "affiliations": [
+                "University of Washington"
+              ],
+              "author_orcid": "0000-0001-8038-7783",
+              "affiliation_slugs": [
+                "university-of-washington-5JeG"
+              ],
+              "author_sequence_number": 1
+            },
+            {
+              "author_name": "Stephen M. Schwartz",
+              "author_slug": "stephen-m-schwartz-PwrYem",
+              "affiliations": [
+                "University of Washington",
+                "Fred Hutch Cancer Center"
+              ],
+              "author_orcid": "0000-0001-7499-8502",
+              "affiliation_slugs": [
+                "university-of-washington-5JeG",
+                "fred-hutch-cancer-center-ayK21"
+              ],
+              "author_sequence_number": 2
+            },
+            {
+              "author_name": "Eduardo M\u00e9ndez",
+              "author_slug": "eduardo-mendez-keL1jw",
+              "affiliations": [
+                "University of Washington",
+                "Fred Hutch Cancer Center",
+                "VA Puget Sound Health Care System"
+              ],
+              "affiliation_slugs": [
+                "university-of-washington-5JeG",
+                "fred-hutch-cancer-center-ayK21",
+                "va-puget-sound-health-care-4YEmE"
+              ],
+              "author_sequence_number": 3
+            }
+          ],
+          "journal": "cancer",
+          "abstract": "BACKGROUND\nGiven the complexity of management of advanced head and neck squamous cell carcinoma (HNSCC), this study hypothesized that high hospital volume would be associated with receiving National Comprehensive Cancer Network (NCCN) guideline therapy and improved survival in patients with advanced HNSCC.\n\n\nMETHODS\nThe Surveillance, Epidemiology, and End Results (SEER)-Medicare database was used to identify patients with advanced HNSCC. Treatment modalities and survival were determined using Medicare data. Hospital volume was determined by the number of patients with HNSCC treated at each hospital.\n\n\nRESULTS\nThere were 1195 patients with advanced HNSCC who met inclusion criteria. In multivariable analyses, high hospital volume was not associated with receiving multimodality therapy per NCCN guidelines (odds ratio = 1.02, 95% confidence interval = 0.66\u20131.60), but showed a nearly significant inverse association with survival in a model adjusted for National Cancer Institute\u2013designated cancer center status, age, sex, race, socioeconomic status, marital status, comorbidity, year of diagnosis, tumor site, and tumor stage (hazard ratio = 0.85, 95% confidence interval = 0.69\u20131.04).\n\n\nCONCLUSIONS\nMedicare patients with advanced HNSCC treated at high-volume hospitals were not more likely to receive NCCN guideline therapy, but had nearly statistically significant better survival, when compared with patients treated at low-volume hospitals. These results suggest that features of high-volume hospitals other than delivery of NCCN guideline therapy influence survival.",
+          "memberId": 311,
+          "citations": [
+            {
+              "id": 1928369834,
+              "lang": "en",
+              "type": "mentioning",
+              "section": "discussion",
+              "snippet": "Survival among patients with HNSCC is influenced by patient and tumor characteristics, such as performance status, comorbidity, tumor size, and presence of regional lymph node metastasis <cite data-doi=\"10.1007/s00520-012-1386-y\">25</cite>, <cite data-doi=\"10.1001/jama.291.20.2441\">26</cite>. The objective of this study was to examine the role of hospital characteristics in survival.",
+              "merge_date": "2020-08-05T22:20:53",
+              "source_doi": "10.1002/cncr.27976",
+              "target_doi": "10.1001/jama.291.20.2441",
+              "type_confidence": 100
+            },
+            {
+              "id": 1928369828,
+              "lang": "en",
+              "type": "mentioning",
+              "section": "methods",
+              "snippet": "In addition, education and income data for each patient's census tract and ZIP code from the 2000 census are incorporated into the PEDSF as indicators of socioeconomic status (SES) <cite data-doi=\"10.1097/00005650-200208001-00003\">18</cite>. Medicare inpatient and physician claims were used to construct a Charlson\u2010based comorbidity score by reviewing claims 12 calendar months prior to the SEER diagnosis date, as described <cite data-doi=\"10.1016/0021-9681(87)90171-8 10.1016/0895-4356(92)90133-8 10.1016/s0895-4356(00)00256-0\">19\u201021</cite>",
+              "merge_date": "2020-08-05T22:20:53",
+              "source_doi": "10.1002/cncr.27976",
+              "target_doi": "10.1016/0021-9681(87)90171-8",
+              "type_confidence": 100
+            },
+            {
+              "id": 1928369822,
+              "lang": "en",
+              "type": "mentioning",
+              "section": "introduction",
+              "snippet": "Prior studies in diseases other than HNSCC have shown that hospital volume<cite data-doi=\"10.1001/jama.280.20.1747\">12</cite> and physician volume<cite data-doi=\"10.1016/j.urology.2008.03.016\">13</cite> influence outcomes. Treatment at a high\u2010volume facility is associated with improved long\u2010term survival in patients with early\u2010 or late\u2010stage laryngeal cancer <cite data-doi=\"10.1002/cncr.25364\">14</cite>, <cite data-doi=\"10.1002/hed.21072\">15</cite>.",
+              "merge_date": "2020-08-05T22:20:53",
+              "source_doi": "10.1002/cncr.27976",
+              "target_doi": "10.1001/jama.280.20.1747",
+              "type_confidence": 100
+            }
+          ],
+          "oa_status": "hybrid",
+          "publisher": "Wiley",
+          "titleSlug": "hospital-volume-is-associated-with-ldEPOr",
+          "index_time": "2026-07-21T03:21:13.013358",
+          "mesh_types": [
+            {
+              "qualifier_id": "Q000401",
+              "descriptor_id": "D006258",
+              "is_major_topic": false,
+              "qualifier_name": "mortality",
+              "descriptor_name": "Head and Neck Neoplasms"
+            },
+            {
+              "qualifier_id": "Q000473",
+              "descriptor_id": "D006258",
+              "is_major_topic": false,
+              "qualifier_name": "pathology",
+              "descriptor_name": "Head and Neck Neoplasms"
+            },
+            {
+              "qualifier_id": "Q000628",
+              "descriptor_id": "D006258",
+              "is_major_topic": false,
+              "qualifier_name": "therapy",
+              "descriptor_name": "Head and Neck Neoplasms"
+            },
+            {
+              "qualifier_id": "Q000453",
+              "descriptor_id": "D014481",
+              "is_major_topic": false,
+              "qualifier_name": "epidemiology",
+              "descriptor_name": "United States"
+            },
+            {
+              "qualifier_id": "Q000592",
+              "descriptor_id": "D016522",
+              "is_major_topic": false,
+              "qualifier_name": "standards",
+              "descriptor_name": "Oncology Service, Hospital"
+            },
+            {
+              "qualifier_id": "Q000706",
+              "descriptor_id": "D016522",
+              "is_major_topic": false,
+              "qualifier_name": "statistics & numerical data",
+              "descriptor_name": "Oncology Service, Hospital"
+            },
+            {
+              "qualifier_id": "Q000706",
+              "descriptor_id": "D061846",
+              "is_major_topic": false,
+              "qualifier_name": "statistics & numerical data",
+              "descriptor_name": "Hospitals, Low-Volume"
+            },
+            {
+              "qualifier_id": "Q000592",
+              "descriptor_id": "D061847",
+              "is_major_topic": false,
+              "qualifier_name": "standards",
+              "descriptor_name": "Hospitals, High-Volume"
+            },
+            {
+              "qualifier_id": "Q000706",
+              "descriptor_id": "D061847",
+              "is_major_topic": false,
+              "qualifier_name": "statistics & numerical data",
+              "descriptor_name": "Hospitals, High-Volume"
+            },
+            {
+              "qualifier_id": "Q000401",
+              "descriptor_id": "D002294",
+              "is_major_topic": false,
+              "qualifier_name": "mortality",
+              "descriptor_name": "Carcinoma, Squamous Cell"
+            },
+            {
+              "qualifier_id": "Q000473",
+              "descriptor_id": "D002294",
+              "is_major_topic": false,
+              "qualifier_name": "pathology",
+              "descriptor_name": "Carcinoma, Squamous Cell"
+            },
+            {
+              "qualifier_id": "Q000628",
+              "descriptor_id": "D002294",
+              "is_major_topic": false,
+              "qualifier_name": "therapy",
+              "descriptor_name": "Carcinoma, Squamous Cell"
+            }
+          ],
+          "journalSlug": "cancer-A3lav",
+          "last_update": 1697509629,
+          "shortJournal": "Cancer",
+          "normalized_types": [
+            "article",
+            "research support, n.i.h., extramural"
+          ],
+          "editorial_notices": {},
+          "fulltext_excerpts": [],
+          "fulltext_location": "s3://scitewiley/fulltext/xml/ed93ca61-9524-4664-b0c9-12f58a595361_1590015377.6943634/27976_ftp.wml2.xml.json",
+          "pubchem_compounds": []
+        }
+      ]
+    }
+  ],
+  "lastUpdated": "2026-09-04",
+  "createdAt": "2026-09-04"
+}
