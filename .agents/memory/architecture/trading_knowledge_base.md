@@ -5956,3 +5956,72 @@ Keywords: wyckoff_spring, accumulation_schematic, cause_to_effect, test_confirma
 - **S1 Supply Depletion Test Rule**:
   $$\text{Wyckoff Spring Validated} \iff \mathcal{W}_{\text{supply}}(t_1) \le 0.45 \quad \land \quad \text{Close}_{t_1} > TR_{\text{support}} \quad \land \quad \text{future\_cvd\_15m} > 0$$
   When the retest of a breakdown low occurs with less than $45\%$ of the initial breakdown volume and spread, floating supply is completely absorbed, releasing explosive upward cause-to-effect momentum.
+
+---
+
+## NODE 305: CANDLE RANGE THEORY (CRT) HIGHER-TIMEFRAME BOUNDARY OSCILLATION & SUB-BAR EXPANSION
+Keywords: candle_range_theory, crt, higher_timeframe_range, candle_expansion, boundary_rotation
+
+### 1. Mathematical Formalization of Candle Range Theory (CRT)
+- Extracted directly from viral institutional trading setups (`@aracademy__`, 1.1M views), Candle Range Theory partitions market dynamics into a Higher-Timeframe (HTF) Reference Candle Range $\Omega_{\text{CRT}} = [CRTL, CRTH]$ where $CRTL = \text{Low}_{\text{HTF}}$ and $CRTH = \text{High}_{\text{HTF}}$. Lower timeframe (LTF 15m) price action oscillates between these boundaries before expanding:
+  $$\Delta_{\text{CRT}} = CRTH - CRTL$$
+- S1 computes the Lower Timeframe Range Penetration and Re-entry Index:
+  $$\mathcal{R}_{\text{CRT}}(t) = \frac{\text{Close}_t - CRTL}{\Delta_{\text{CRT}}}$$
+  coupled with the Sub-Bar Boundary Reversal Velocity:
+  $$\mathcal{V}_{\text{CRT}}(t) = \frac{\text{Close}_t - \text{Low}_t}{\text{High}_t - \text{Low}_t} \cdot \mathbf{1}_{\{\text{Low}_t < CRTL \land \text{Close}_t > CRTL\}}$$
+
+### 2. CRT Boundary Rotation Invariant
+- **S1 CRT Rotation Rule**:
+  $$\text{CRT Range Rotation Confirmed} \iff \text{Low}_t < CRTL \quad \land \quad \text{Close}_t \ge CRTL + 0.10 \cdot \text{ATR}_{15\text{m}} \quad \land \quad \mathcal{V}_{\text{CRT}}(t) \ge 0.70$$
+  When price probes below the HTF Candle Range Low but re-enters with the candle closing in the top $30\%$ of its range, the fake breakout traps breakout shorts, creating an immediate deterministic mean-reversion drift toward the opposing $CRTH$ boundary.
+
+---
+
+## NODE 306: TURTLE BODY SOUP (TBS) WICK MANIPULATION & BODY CLOSE REVERSAL
+Keywords: turtle_body_soup, tbs, ict_turtle_soup, wick_raid, body_invalidation, liquidity_raid
+
+### 1. Quantitative Modeling of Turtle Body Soup (TBS) Mechanics
+- Popularized across Instagram trading reels as the "Turtle Body Soup" (TBS) setup, this microstructure pattern represents a refinement of Linda Raschke's original Turtle Soup strategy. A 20-bar rolling low $L_{20}^* = \min_{s \in [t-20, t-1]} \text{Low}_s$ is raided by a lower wick, but the candle **body** refuses to close below $L_{20}^*$:
+  $$\text{Wick Extension} = L_{20}^* - \text{Low}_t > 0 \quad \land \quad \min(\text{Open}_t, \text{Close}_t) \ge L_{20}^*$$
+- S1 evaluates the TBS Asymmetric Absorption Scalar:
+  $$\Theta_{\text{TBS}}(t) = \frac{L_{20}^* - \text{Low}_t}{\text{ATR}_{15\text{m}}} \cdot \left(\frac{\text{taker\_buy\_count}_t}{\text{taker\_sell\_count}_t + 1}\right)$$
+
+### 2. Turtle Body Soup Invariant
+- **S1 TBS Liquidity Raid Invariant**:
+  $$\text{TBS Long Validated} \iff \text{Low}_t < L_{20}^* \quad \land \quad \text{Close}_t \ge L_{20}^* \quad \land \quad \Theta_{\text{TBS}}(t) \ge 0.40 \quad \land \quad \text{long\_liq\_zs} > 1.8$$
+  When the stop-run wick violates the 20-bar low while the candle body closes firmly above it amid surging taker buy counts and $>1.8\sigma$ long liquidations, retail stop-loss supply has been completely absorbed by institutional limit orders, triggering an immediate upward bounce.
+
+---
+
+## NODE 307: SMART MONEY CANDLESTICK TRAPS & ASYMMETRIC REJECTION ENGULFING
+Keywords: candlestick_traps, rejection_wicks, fake_breakout, institutional_engulfing, smart_money_candlesticks
+
+### 1. Econometric Formalization of Smart Money Trap Formations (`@chartswithharsh`, 8.4M Views)
+- Retail traders enter on momentum breakouts when price prints strong candles pushing past resistance or support. Institutional algorithms exploit this by engineering a two-bar Trap Sequence:
+  - Bar $t-1$: Impulsive expansion candle driving retail volume past key structural level $S^*$.
+  - Bar $t$: Immediate rejection candle where the body completely engulfs the prior bar's body in the opposite direction ($\text{Close}_t < \text{Open}_{t-1}$ for shorts, or $\text{Close}_t > \text{Open}_{t-1}$ for longs) with a massive expansion in volume.
+- S1 tracks the Two-Bar Trap Engulfing Ratio:
+  $$\mathcal{E}_{\text{trap}}(t) = \frac{|\text{Close}_t - \text{Open}_t|}{|\text{Close}_{t-1} - \text{Open}_{t-1}|} \cdot \left(\frac{\text{Volume}_t}{\text{Volume}_{t-1}}\right)$$
+
+### 2. Trap Reversal Invariant
+- **S1 Asymmetric Engulfing Invariant**:
+  $$\text{Retail Trap Triggered} \iff \mathcal{E}_{\text{trap}}(t) \ge 1.60 \quad \land \quad \text{Close}_t > \text{High}_{t-1} \quad \land \quad \text{fp\_delta}_t > 0$$
+  When an opposing bullish engulfing candle exceeds the prior breakdown candle's range by $\ge 1.60\times$ on heavy turnover with positive footprint delta, trapped breakout sellers are forced to cover, generating acute positive price acceleration.
+
+---
+
+## NODE 308: FIBONACCI GOLDEN ZONE (61.8%–78.6%) & INSTITUTIONAL DEMAND MITIGATION
+Keywords: golden_zone, fibonacci_retracement, demand_zone_mitigation, institutional_discount, optimal_trade_entry
+
+### 1. Optimal Trade Entry (OTE) & Golden Zone Mechanics (`@mralbash_`, 303K Views)
+- Institutional accumulation algorithms prefer buying at a discount relative to the prevailing impulse leg $[L_{\text{impulse}}, H_{\text{impulse}}]$. The "Golden Zone" is defined mathematically as the internal retracement interval:
+  $$\Omega_{\text{OTE}} = \left[H_{\text{impulse}} - 0.786 \cdot \Delta P_{\text{impulse}}, \ H_{\text{impulse}} - 0.618 \cdot \Delta P_{\text{impulse}}\right]$$
+- S1 measures the Golden Zone Retracement Ratio:
+  $$\Phi_{\text{retracement}}(t) = \frac{H_{\text{impulse}} - P_t}{H_{\text{impulse}} - L_{\text{impulse}}}$$
+  coupled with the VWAP Z-Score within the mitigation zone:
+  $$Z_{\text{VWAP, OTE}}(t) = \frac{P_t - \text{VWAP}_t}{\sigma_{\text{VWAP}}}$$
+
+### 2. Golden Zone Confluence Invariant
+- **S1 Institutional Discount Invariant**:
+  $$\text{OTE Long Armed} \iff \Phi_{\text{retracement}}(t) \in [0.618, 0.786] \quad \land \quad Z_{\text{VWAP, OTE}}(t) \le -0.80 \quad \land \quad \text{spot\_cvd\_15m} > 0$$
+  When an asset pulls back into the $61.8\% - 78.6\%$ discount zone accompanied by negative VWAP stretch ($Z \le -0.80$) and Spot CVD accumulation, institutional accumulation algorithms execute aggressive buy orders, defending the macro impulse structure.
